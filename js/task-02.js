@@ -3,13 +3,11 @@ const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatoes', 'Herbs', 'Co
 
 const ul = document.querySelector('#ingredients');
 
-const liElements = ingredients.map(ingredient => {
+const liElements = ingredients.map(function (ingredient) {
   const li = document.createElement('li');
   li.textContent = ingredient;
   li.classList.add('item');
   return li;
 });
 
-liElements.forEach(li => {
-  ul.appendChild(li);
-});
+ul.append(...liElements);

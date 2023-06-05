@@ -4,16 +4,16 @@ const totalCount = document.querySelector('#value');
 
 let count = 0;
 
-totalCount.innerHTML = count;
+totalCount.textContent = count;
 
 const handleDecrement = () => {
   count--;
-  totalCount.innerHTML = count;
+  totalCount.textContent = count;
 };
 
 const handleIncrement = () => {
   count++;
-  totalCount.innerHTML = count;
+  totalCount.textContent = count;
 };
 
 const buttonDecrement = document.querySelector('button[data-action="decrement"]');

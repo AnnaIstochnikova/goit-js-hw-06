@@ -5,6 +5,6 @@ console.log(numberOfItems);
 
 const headers = document.getElementsByTagName('h2');
 for (const header of headers) {
-  console.log('Category: ' + header.innerHTML);
+  console.log('Category: ' + header.textContent);
   console.log('Elements: ' + header.parentNode.querySelectorAll('ul > li').length);
 }
